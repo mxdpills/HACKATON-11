@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 1</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <nav class="full-height d-flex flex-column p-3 bg-dark col-2 ">
+
+        <div class="d-flex align-items-center text-decoration-none" href="#" >
+            <img src="img/eva-logo_login.png" alt="logo" height="30" class="eva_logo">
+        </div>
+
+        <div class="container-fluid" id="navbarNav">
+
+            <ul class="nav nav-pills flex-column mb-auto text-decoration-none gap-3">
+
+                <li class="nav-item">
+                    <button class="btn button-nav text-decoration-none d-flex justify-content-start align-items-center" href="#" cursorshover="true">
+                        <i class="fa-solid fa-house fa-sm icon-nav"></i>
+                        <span class="text-nav">Inicio</span>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn button-nav text-decoration-none d-flex justify-content-start align-items-center" href="#" cursorshover="true">
+                        <i class="fa-solid fa-book-open fa-sm icon-nav"></i>
+                        <span class="text-nav">Mis Cursos</span>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn button-nav text-decoration-none d-flex justify-content-start align-items-center" href="#" cursorshover="true">
+                        <i class="fa-solid fa-bookmark fa-sm icon-nav"></i>
+                        <span class="text-nav">Biblioteca</span>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn button-nav text-decoration-none d-flex justify-content-start align-items-center" href="#" cursorshover="true">
+                        <i class="fa-solid fa-building-columns fa-sm icon-nav"></i>
+                        <span class="text-nav">Pagos</span>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn button-nav text-decoration-none d-flex justify-content-start align-items-center" href="#" cursorshover="true">
+                        <i class="fa-solid fa-sheet-plastic fa-sm icon-nav"></i>
+                        <span class="text-nav">Trámites</span>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn button-nav text-decoration-none d-flex justify-content-start align-items-center" href="#" cursorshover="true">
+                        <i class="fa-solid fa-gamepad fa-sm icon-nav"></i>
+                        <span class="text-nav">Beneficios</span>
+                    </button>
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
+
+    <div class="col-10 ps-3 d-flex align-items-center header-eva bg-white">
+
+        <header class="d-flex align-items-center custom-header ">
+
+            <div>
+                <h1 class="col-1">Inicio</h1>
+            </div>
+
+            <div class="d-flex align-items-center col-11 justify-content-end">
+                <i class="fa-solid fa-question-circle fa-1x me-4"></i>
+                <i class="fa-regular fa-envelope me-4"></i>
+                <i class="fas fa-user-circle fa-1x me-2"></i>
+                <span class="user-name">Nombre de usuario</span>
+            </div>
+
+        </header>
+
+
+
+    </div>
+    
+    <section>
+
+        <div class="col-7 py-3 px-4 d-flex flex-column justify-content-center ">
+
+            <div class=" d-flex flex-row w-100 ">
+                <input id="busqueda-input" type="text"
+                placeholder="¡Hola, Usuario! ¿Qué publicación estás buscando?"
+                class="input-publi p-2 w-100 mb-3">
+                <button id="buscar-btn" class="btn-buscar ms-3 me-2 px-5 mb-3">Buscar</button>
+            </div>
+
+            <div class="scroll-feed" id="scroll-feed">
+                <article class="article-feed d-flex flex-column card-feed bg-white shadow container mt-2 px-4 ">
+            
+                    <div class="d-flex flex-row mt-4 mb-2 align-items-center">
+                        <img src="img/1731566_595783.jpeg" alt="foto de perfil" class="foto-perfil">
+                        <div class="ms-2 d-flex flex-column"> 
+                            <h5 class="mb-1 titulo-article" >Vinculación con el Medio</h5>
+                            <span class="tag-card subtitulo-article" >Mayra Bravo</span>
+                        </div>
+    
+                    </div>
+    
+                    <p id="" class="mb-3 lh-sm parrafo">✨ ¡Únete a la Teletón y cambia vidas! 💪 Dona por Yape o Plin al 989 361 677 y envía la captura a 📧 sumate@teleton.pe con el asunto IDAT alumnos/docentes.
+                        Cada aporte cuenta y juntos podemos lograr un gran impacto. 🙌 ¡Tu ayuda hace la diferencia! 💖Puedes realizar tu donación hasta el 29 de Setiembre💫</p>
+                    
+                     <img src="img/2a742533-be03-4ec5-86d0-23c1a16bb2ee.png" alt="" class="w-100 mb-2">
+    
+                     <div class="d-flex flex-row align-items-center">
+                            <i class="fa-solid fa-star fa-xs me-3"></i>
+                            <i class="fa-solid fa-heart fa-xs me-3"></i>
+                            <i class="fa-solid fa-crown fa-xs me-3"></i>
+                            <span class="n-interaction">20</span>
+                     </div>
+    
+                     <div class="d-flex justify-content-between post-button my-2 py-3">
+    
+                        <button class="d-flex flex-row align-items-center button-feed mx-4">
+                            <i class="fa-regular fa-star me-2"></i>
+                            <h6 class="mt-2 btnFeed-text">Me interesa</h6>
+                        </button>
+    
+                        <button class="d-flex flex-row align-items-center button-feed mx-4">
+                            <i class="fa-regular fa-heart me-2"></i>
+                            <h6 class="mt-2 btnFeed-text">Me emociona</h6>
+                        </button>
+    
+                        <button class="d-flex flex-row align-items-center button-feed mx-4">
+                            <i class="fa-solid fa-crown me-2"></i>
+                            <h6 class="mt-2 btnFeed-text">Me enorgullece</h6>
+                        </button>
+    
+                     </div>
+    
+                </article>
+                <article class="article-feed d-flex flex-column card-feed bg-white shadow container mt-2 px-4 ">
+            
+                    <div class="d-flex flex-row mt-4 mb-2 align-items-center">
+                        <img src="img/1731566_595783.jpeg" alt="foto de perfil" class="foto-perfil">
+                        <div class="ms-2 d-flex flex-column"> 
+                            <h5 class="mb-1 titulo-article">Empleabilidad</h5>
+                            <span class="tag-card subtitulo-article">Kenedy Yali</span>
+                        </div>
+    
+                    </div>
+    
+                    <p class="mb-3 lh-sm parrafo">Empleabilidad #IDAT PIURA 💡
+                        Alumnos y egresados PIURA los invitamos a participar en la próxima Feria Laboral 2024 Presencial, 
+                        el viernes 27 de septiembre, de 09:00am - 1:00pm, en Campus Idat Piura. 📌</p>
+                    
+                     <img src="img/1c2d756e-1965-4580-b37e-61f46fddcbcc.png" alt="" class="w-100 mb-2">
+    
+                     <div class="d-flex flex-row align-items-center">
+                            <i class="fa-solid fa-star fa-xs me-3"></i>
+                            <i class="fa-solid fa-heart fa-xs me-3"></i>
+                            <i class="fa-solid fa-crown fa-xs me-3"></i>
+                            <span class="n-interaction">20</span>
+                     </div>
+    
+                     <div class="d-flex justify-content-between post-button my-2 py-3">
+    
+                        <button class="d-flex flex-row align-items-center button-feed mx-4">
+                            <i class="fa-regular fa-star me-2"></i>
+                            <h6 class="mt-2 btnFeed-text">Me interesa</h6>
+                        </button>
+    
+                        <button class="d-flex flex-row align-items-center button-feed mx-4">
+                            <i class="fa-regular fa-heart me-2"></i>
+                            <h6 class="mt-2 btnFeed-text">Me emociona</h6>
+                        </button>
+    
+                        <button class="d-flex flex-row align-items-center button-feed mx-4">
+                            <i class="fa-solid fa-crown me-2"></i>
+                            <h6 class="mt-2 btnFeed-text">Me enorgullece</h6>
+                        </button>
+    
+                     </div>
+    
+                </article>
+                
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="col-3 m-0 p-2 box-horario">
+
+        <div class="bg-white mt-2 p-3 shadow container card-horario">
+
+            <div>
+                <h6 class="mb-1">Mis programación</h6>
+
+                <div class="d-flex justify-content-around align-items-center">
+                    <span class="nombre-mes">Julio</span>
+                    <button class="btn btn_programacion m-0" id="sem-previa"><</button>
+                    <button class="btn btn_programacion m-0" id="sem-siguiente">></button>
+                    <span class="nombre-semana">Esta semana</span>
+                </div>
+
+            </div>
+
+            <!-- <article>
+                
+                <div class="d-flex flex-row gap-3 mt-1">
+                    <div class="fecha d-flex flex-column justify-content-start align-items-center">
+                        <span class="nombre-dia">Lun</span>
+                        <span class="fecha-dia">10</span>
+                    </div>
+    
+                    <div class="w-100">
+                        <a href="#" class="text-decoration-none">
+                            <span class="nombre-curso text-uppercase lh-1">Curso A</span>
+                        </a>
+                        <div class="info-curso-grid lh-sm">
+                            <span class="titulo-hora-grid">Hora:</span>
+                            <span class="hora-curso-grid ">07:30 a.m. - 9:30 a.m. </span>
+                            <span class="titulo-clase-grid">Clase:</span>
+                            <span class="tipo-curso-grid ">Virtual</span>
+    
+                        </div>
+                    </div>
+                </div>
+                
+            </article> -->
+           
+            
+           <div id="programacion-container">
+
+           </div>
+
+            <!--  
+            <article>
+                
+                <div class="d-flex flex-row gap-3 mt-1">
+                    <div class="fecha d-flex flex-column justify-content-start align-items-center">
+                        <span class="nombre-dia">Lun</span>
+                        <span class="fecha-dia">10</span>
+                    </div>
+    
+                    <div class="">
+                        <a href="#" class="text-decoration-none">
+                            <span class="nombre-curso text-uppercase lh-1">Curso A</span>
+                        </a>
+                        <div class="info-curso-grid lh-sm">
+                            <span class="titulo-grid ">Hora:</span>
+                            <span class="hora-curso-grid ">07:30 a.m. - 9:30 a.m. </span>
+                            <span class="titulo-grid ">Clase:</span>
+                            <span class="tipo-curso-grid ">Virtual</span>
+    
+                        </div>
+                    </div>
+                </div>
+                
+            </article>
+            <article>
+                
+                <div class="d-flex flex-row gap-3 mt-1">
+                    <div class="fecha d-flex flex-column justify-content-start align-items-center">
+                        <span class="nombre-dia">Lun</span>
+                        <span class="fecha-dia">10</span>
+                    </div>
+    
+                    <div class="">
+                        <a href="#" class="text-decoration-none">
+                            <span class="nombre-curso text-uppercase lh-1">Curso A</span>
+                        </a>
+                        <div class="info-curso-grid lh-sm">
+                            <span class="titulo-grid ">Hora:</span>
+                            <span class="hora-curso-grid ">07:30 a.m. - 9:30 a.m. </span>
+                            <span class="titulo-grid ">Clase:</span>
+                            <span class="tipo-curso-grid ">Virtual</span>
+    
+                        </div>
+                    </div>
+                </div>
+                
+            </article>
+            <article>
+                
+                <div class="d-flex flex-row gap-3 mt-1">
+                    <div class="fecha d-flex flex-column justify-content-start align-items-center">
+                        <span class="nombre-dia">Lun</span>
+                        <span class="fecha-dia">10</span>
+                    </div>
+    
+                    <div class="">
+                        <a href="#" class="text-decoration-none">
+                            <span class="nombre-curso text-uppercase lh-1">Curso A</span>
+                        </a>
+                        <div class="info-curso-grid lh-sm">
+                            <span class="titulo-grid ">Hora:</span>
+                            <span class="hora-curso-grid ">07:30 a.m. - 9:30 a.m. </span>
+                            <span class="titulo-grid ">Clase:</span>
+                            <span class="tipo-curso-grid ">Virtual</span>
+    
+                        </div>
+                    </div>
+                </div>
+                
+            </article>
+            <article>
+                
+                <div class="d-flex flex-row gap-3 mt-1">
+                    <div class="fecha d-flex flex-column justify-content-start align-items-center">
+                        <span class="nombre-dia">Lun</span>
+                        <span class="fecha-dia">10</span>
+                    </div>
+    
+                    <div class="">
+                        <a href="#" class="text-decoration-none">
+                            <span class="nombre-curso text-uppercase lh-1">Curso A</span>
+                        </a>
+                        <div class="info-curso-grid lh-sm">
+                            <span class="titulo-grid ">Hora:</span>
+                            <span class="hora-curso-grid ">07:30 a.m. - 9:30 a.m. </span>
+                            <span class="titulo-grid ">Clase:</span>
+                            <span class="tipo-curso-grid ">Virtual</span>
+    
+                        </div>
+                    </div>
+                </div>
+                
+            </article>
+            <article>
+                
+                <div class="d-flex flex-row gap-3 mt-1">
+                    <div class="fecha d-flex flex-column justify-content-start align-items-center">
+                        <span class="nombre-dia">Lun</span>
+                        <span class="fecha-dia">10</span>
+                    </div>
+    
+                    <div class="">
+                        <a href="#" class="text-decoration-none">
+                            <span class="nombre-curso text-uppercase lh-1">Curso A</span>
+                        </a>
+                        <div class="info-curso-grid lh-sm">
+                            <span class="titulo-grid ">Hora:</span>
+                            <span class="hora-curso-grid ">07:30 a.m. - 9:30 a.m. </span>
+                            <span class="titulo-grid ">Clase:</span>
+                            <span class="tipo-curso-grid ">Virtual</span>
+    
+                        </div>
+                    </div>
+                </div>
+                
+            </article>  
+            -->
+            
+        </div>
+    </section>
+
+      <!--<script src="js/ordenarArrayCursosAsignados.js"></script>-->
+    <script src="js/dataCursos.js"></script> <!--primero siempre debe ir el array con los objetos-->
+    <script src="js/filtrarArticulos.js"></script>
+    <script src="js/functRenderizarCursos.js"></script>
+    <script src="js/activeButton.js"></script>
+    
+</body>
+</html>
